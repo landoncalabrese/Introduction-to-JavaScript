@@ -275,23 +275,23 @@ function grade(score) {
   
   switch(true) {
     case (score <= 100 && score >= 90):
-      gscore = 'A';
+       console.log('you got an A');
       break;
     case (score <= 89 && score >= 80):
-      gscore = 'B';
+     console.log('you got a B');
       break;
     case (score <= 79 && score >= 70):
-      gscore = 'C';
+      console.log('you got a C');
       break;
     case (score <= 69 && score >= 60):
-      gscore = 'D';
+      console.log('you got a D');
       break;
     case (score <= 59):
-      gscore = 'F';
+      console.log('you got an F');
       break;
   }
 }
-
+console.log(grade);
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
