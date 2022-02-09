@@ -126,7 +126,7 @@ function hungryDog(pounds, year){
     return pounds * .02
   } else if (year >= .166 && year <= .33){
     return pounds *.1
-  } else if (pounds >= .33 &&  year <= .583){
+  } else if (pounds >= .33 &&  year <= .582){
     return pounds * .05
   } else {
     return pounds * .04
@@ -201,7 +201,7 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(numOfMiles){
+function miles(){
   let km = 10
   return km * 0.621371;
 }
@@ -216,7 +216,7 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(numOfFeet){
+function feet(){
   let cm = 160
   return cm / 30.48;
 }
