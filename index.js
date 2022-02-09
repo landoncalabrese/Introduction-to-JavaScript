@@ -202,8 +202,8 @@ Using the miles function below do the following:
 */
 
 function miles(numOfMiles){
-  let km = 5
-  return km / numOfMiles;
+  let km = 10
+  return km * 0.621371;
 }
 
 
