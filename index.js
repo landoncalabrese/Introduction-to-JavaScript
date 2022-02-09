@@ -53,11 +53,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-let x = "1999";
-console.log(x.toString());
-str = '1999'
-console.log(Math.floor(str));
-
+ let x = "1999"
+ Number("1999")
+console.log(x);
 /*
 Task 1d - Multiply
  
@@ -214,7 +212,7 @@ Using the miles function below do the following:
 */
 
 function miles(numOfMiles){
-  let kms = 5
+  let km = 5
   return km / numOfMiles;
 }
 
