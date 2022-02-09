@@ -271,8 +271,7 @@ Using the grade function below do the following:
 */
 
 function grade(score) {
-  var gscore;
-  
+
   switch(true) {
     case (score <= 100 && score >= 90):
        console.log('you got an A');
@@ -289,6 +288,7 @@ function grade(score) {
     case (score <= 59):
       console.log('you got an F');
       break;
+      default: console.log(null);
   }
 }
 console.log(grade);
