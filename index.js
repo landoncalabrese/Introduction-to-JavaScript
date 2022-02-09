@@ -126,7 +126,7 @@ function hungryDog(pounds, year){
     return pounds * .02
   } else if (year >= .166 && year <= .33){
     return pounds *.1
-  } else if (year >= .33 && year <= .583){
+  } else if (pounds >= .33 &&  year <= .583){
     return pounds * .05
   } else {
     return pounds * .04
