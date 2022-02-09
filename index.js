@@ -19,8 +19,8 @@ Do the following:
 
    HINT: no function required
 */
-
-
+let votingAge = 18;
+console.log(votingAge >= 18);
 
 /*
 Task 1b - Values
@@ -33,7 +33,12 @@ Do the following:
    HINT: no function required
 */
 
-
+let varOne = 'one'
+let varTwo = 'two'
+if (varTwo === true) {
+  varOne = 'five'
+  console.log(varOne);
+}
 
 
 
@@ -48,8 +53,10 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+let x = "1999";
+console.log(x.toString());
+str = '1999'
+console.log(Math.floor(str));
 
 /*
 Task 1d - Multiply
@@ -60,11 +67,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(m, n){
+  const multiply = m * n;
+  return multiply;
 }
-
-
+  console.log(multiply(5, 7));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -76,8 +83,9 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(Age){
+  let dogAge = 7 * Age
+  return dogAge
 }
 
 
@@ -109,9 +117,33 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
-}
+function hungryDog(weight, age){
+  if (age >= 1) {
+    if (weight <= 5) {
+      return (weight / 100) * 5;
+    } else if (weight > 5 && weight <= 10) {
+      return (weight / 100) * 4;
+    } else if (weight > 10 && weight <= 15) {
+      return (weight / 100) * 3;
+    } else if (weight > 15) {
+      return (weight / 100) * 2;
+    } else {
+      return 'error'
+    }
+  } else if (age < 1) {
+    if (age <= 0.333) {
+      return (weight / 100) * 10;
+    }else if (age > 0.333 && age <= 0.583) {
+      return (weight / 100) * 5;
+    } else if (age > 0.583) {
+      return (weight / 100) * 4;
+    }else {
+      return 'error'
+    }
+  } else {
+    return 'error'
+  }
+};
 
 
 
@@ -137,10 +169,36 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.floor(Math.random() * 4);
+if (computer === 1) {
+  computer === 'rock';
+} else if (computer === 2) {
+  computer === 'paper';
+} else if (computer === 3) {
+  computer === 'scissors';
+}
 
 function game(user, computer){
-  /*add your code here*/
+  if (user === computer) {
+    return "it's a tie";
+  } else if (user == 'scissors' && computer == 'paper') {
+    return "you win!";
+  } else if (user == 'paper' && computer == 'rock') {
+    return "you win!";
+  } else if (user == 'rock' && computer == 'scissors') {
+    return "you win!";
+  }else if (user == 'paper' && computer == 'scissors') {
+    return "you lose!";
+  } else if (user == 'rock' && computer == 'paper') {
+    return "you lose!";
+  } else if (user == 'scissors' && computer == 'rock') {
+    return "you lose!";
+  } else {
+    return 'error';
+  }
 }
+
+console.log(game());
 
 
 
@@ -155,8 +213,9 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(numOfMiles){
+  let kms = 5
+  return km / numOfMiles;
 }
 
 
@@ -169,8 +228,9 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(numOfFeet){
+  let cm = 500
+  return cm / 30.48;
 }
 
 
@@ -185,8 +245,8 @@ Using the annoyingSong function below do the following:
     "{number you gave as an argument} bottles of soda on the wall, {number you gave as an argument} bottles of soda, take one down pass it around {number you gave as an argument minus 1} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(){
+      
 }
 
 
@@ -205,7 +265,7 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
+function grade(){
 /*Your Code here */
 }
 
